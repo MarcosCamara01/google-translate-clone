@@ -8,7 +8,7 @@ const initialState: State = {
     fromText: "",
     result: "",
     loading: false
-  }
+}
 
 function reducer(state: State, action: Action) {
     const { type } = action
@@ -73,15 +73,15 @@ export function useStore() {
         dispatch({ type: "SET_FROM_LANGUAGE", payload })
     }
 
-    const setToLanguage = (payload: Language)  => {
+    const setToLanguage = (payload: Language) => {
         dispatch({ type: "SET_TO_LANGUAGE", payload })
     }
 
-    const setFromText = (payload: string)  => {
+    const setFromText = (payload: string) => {
         dispatch({ type: "SET_FROM_TEXT", payload })
     }
 
-    const setResult = (payload: string)  => {
+    const setResult = (payload: string) => {
         dispatch({ type: "SET_RESULT", payload })
     }
 
