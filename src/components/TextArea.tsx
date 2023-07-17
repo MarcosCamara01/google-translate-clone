@@ -11,7 +11,7 @@ interface Props {
 const commonStyles = { border: 0, height: "200px", resize: "none" }
 
 const getPlaceholder = ({ type, loading }: { type: SectionType, loading?: boolean }) => {
-    if (type === SectionType.From) return "Introducior texto"
+    if (type === SectionType.From) return "Introducir texto"
     if (loading === true) return "Cargando..."
     return "Traducción"
 }
